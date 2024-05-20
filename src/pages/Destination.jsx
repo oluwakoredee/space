@@ -3,6 +3,7 @@
 import { useState } from "react";
 import moonimg from "../../src/assets/destination/image-moon.webp";
 import data from "../assets/data.json";
+import './destination.css'
 
 const Destination = () => {
   const [planet, setPlanet] = useState();
@@ -18,7 +19,7 @@ const Destination = () => {
   };
 
   return (
-    <div className="bg-destination-mobile md:bg-destination-tablet xl:bg-destination-desktop  w-screen bg-cover lg:h-fit overflow-hidden xl:flex xl:h-screen   text-white  bg-no-repeat z-0 h-screen">
+    <div className="bg  w-screen bg-cover lg:h-fit overflow-hidden xl:flex xl:h-screen   text-white  bg-no-repeat z-0 h-screen">
       <div className="gap-10 flex flex-col xl: items-center md:text-[20px]  ">
         <p className="barlow-condensed-regular pt-3 flex md:mt-36 md:mr-[550px] xl:text-[28px] xl:tracking-[3px] xl:absolute xl:left-[200px]    xl:pl-[0px]  gap-3 ">
           <p className="text-[#383B4B]    tracking-widest md:text-[20px] xl:text-[28px]  ">01</p> PICK YOUR DESTINATION
