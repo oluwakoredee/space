@@ -16,7 +16,7 @@ const Crew = () => {
     //Two styles are applied 
     //1. the tailwind styling is applied.
     //2. .css styling because vercel does not recognize the tailwind styling.
-    <div className="bga bg-crew-mobile md:bg-crew-tablet xl:bg-crew-desktop w-screen bg-cover text-white md:pt-40  bg-no-repeat z-0 h-screen">
+    <div className="bga  w-screen bg-cover text-white md:pt-40  bg-no-repeat z-0 h-screen">
       <div className="border-b-[1px] md:border-0   xl:text-[28px]     md:text-[20px]  border-b-[#383B4B] gap-10 flex flex-col items-center ">
         <p className="barlow-condensed-regular xl:tracking-[4.72px] md:absolute md:left-10 pt-3 flex xl:absolute xl:left-40   gap-3 ">
           <p className="text-[#383B4B]   md:text-gray-400">02</p> MEET YOUR CREW
