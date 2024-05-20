@@ -11,13 +11,13 @@ const Navbar = () => {
       <img
         src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1710170669/space-tour/Group_2_zyec8i.png"
         alt=""
-        className="h-[48px] w-[48px] md:mt-6  mb-2 lg:mt-[64px] lg:ml-4"
+        className="h-[48px] w-[48px] md:mt-6 xl:mt-[30px]  mb-2 lg:mt-[64px] lg:ml-4"
 
       />
       </Link>
-      <div className="md:flex hidden  lg:flex lg:bg-transparent xl:gap-[90px] lg:backdrop-blur-lg lg:mt-[40px] lg:pr-[200px] lg:gap-10 md:bg-[rgb(255,255,255,4%)] p-9 text-white gap-5">
+      <div className="md:flex hidden  lg:flex xl:mt-2 lg:bg-transparent xl:gap-[90px] uppercase lg:backdrop-blur-lg lg:mt-[40px] lg:pr-[200px] lg:gap-10 md:bg-[rgb(255,255,255,4%)] p-9 text-white gap-5">
         
-      <NavLink className={({isActive}) => isActive ? 'border-b-2  border-white flex items-center  gap-2':" flex items-center  gap-2"}  to={"/"}>
+      <NavLink className={({isActive}) => isActive ? 'border-b-2  border-white flex items-center  gap-2 ':" flex items-center  gap-2"}  to={"/"}>
               <b className="barlow-condensed-regular md:hidden lg:flex">00</b> <p>Home</p>
             </NavLink>
             <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"/destination"}>
