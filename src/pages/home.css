@@ -1,3 +1,18 @@
 .bg{
     background-image: url(../assets/home/background-home-mobile.jpg)
 }
+@media (min-width: 1280px){
+   .bg{
+        background-image: url(../assets/home/background-home-desktop.jpg)
+    }
+}
+@media (min-width: 768px) { 
+    .bg{
+        background-image: url(../assets/home/background-home-tablet.jpg)
+    }
+}
+@media (min-width: 1024px) {
+    .bg{
+        background-image: url(../assets/home/background-home-desktop.jpg)
+    }
+ }
