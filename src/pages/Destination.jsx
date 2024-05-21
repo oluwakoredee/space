@@ -19,6 +19,9 @@ const Destination = () => {
   };
 
   return (
+    //Two styles are applied 
+    //1. the tailwind styling is applied (bg-destination-mobile md:bg-destination-tablet xl:bg-destination-desktop).
+    //2. .css styling because vercel does not recognize the tailwind styling.
     <div className="bgi w-screen bg-cover lg:h-fit overflow-hidden xl:flex xl:h-screen   text-white  bg-no-repeat z-0 h-screen">
       <div className="gap-10 flex flex-col xl: items-center md:text-[20px]  ">
         <p className="barlow-condensed-regular pt-3 flex md:mt-36 md:mr-[550px] xl:text-[28px]  md:text-[20px] xl:tracking-[3px] xl:absolute xl:left-[200px]    xl:pl-[0px]  gap-3 ">
