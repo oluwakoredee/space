@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
-    <nav className="flex  w-screen md:fixed  bg-black lg:bg-transparent    overflow-x-hidden md:pl-10   justify-between pt-4 pl-6 pr-4">
+    <nav className="flex  w-screen md:fixed md:pt-0 md:pr-0   bg-transparent lg:bg-transparent    overflow-x-hidden md:pl-10   justify-between pt-4 pl-6 pr-4">
      <Link to={"/"} >
       <img
         src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1710170669/space-tour/Group_2_zyec8i.png"
@@ -15,7 +15,7 @@ const Navbar = () => {
 
       />
       </Link>
-      <div className="md:flex hidden  lg:flex xl:mt-2 lg:bg-transparent xl:gap-[90px] uppercase lg:backdrop-blur-lg lg:mt-[40px] lg:pr-[200px] lg:gap-10 md:bg-[rgb(255,255,255,4%)] p-9 text-white gap-5">
+      <div className="md:flex hidden  lg:flex xl:mt-2 lg:bg-transparent xl:gap-[90px]  uppercase lg:backdrop-blur-lg lg:mt-[40px] lg:pr-[200px] lg:gap-10 md:bg-[rgb(255,255,255,4%)] p-9 text-white gap-5">
         
       <NavLink className={({isActive}) => isActive ? 'border-b-2  border-white flex items-center  gap-2 ':" flex items-center  gap-2"}  to={"/"}>
               <b className="barlow-condensed-regular md:hidden lg:flex">00</b> <p>Home</p>
@@ -23,10 +23,10 @@ const Navbar = () => {
             <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"/destination"}>
               <b className="barlow-condensed-regular md:hidden lg:flex">01</b> <p>Destination</p>
             </NavLink>
-            <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"crew"}>
+            <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"/crew"}>
               <b className="barlow-condensed-regular md:hidden lg:flex">02</b> <p>Crew</p>
             </NavLink>
-            <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"Technology"}>
+            <NavLink className={({isActive}) => isActive ? 'border-b-2 border-white flex items-center  gap-2':"flex items-center gap-2"} to={"/Technology"}>
               <b className="barlow-condensed-regular md:hidden lg:flex">03</b> <p>Technology</p>
             </NavLink>
       </div>
@@ -54,10 +54,10 @@ const Navbar = () => {
             <NavLink className="flex items-center gap-2" to={"/destination"}>
               <b className="barlow-condensed-regular">01</b> <p>Destination</p>
             </NavLink>
-            <NavLink className="flex items-center gap-2" to={"crew"}>
+            <NavLink className="flex items-center gap-2" to={"/crew"}>
               <b className="barlow-condensed-regular">02</b> <p>Crew</p>
             </NavLink>
-            <NavLink className="flex items-center gap-2" to={"Technology"}>
+            <NavLink className="flex items-center gap-2" to={"/Technology"}>
               <b className="barlow-condensed-regular">03</b> <p>Technology</p>
             </NavLink>
           </div>

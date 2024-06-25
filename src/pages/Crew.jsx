@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import data from "../assets/data.json";
 import './crew.css'
+import Navbar from "../components/Navbar";
 
 const Crew = () => {
   const [index, setIndex] = useState(0);
@@ -16,10 +17,11 @@ const Crew = () => {
     //Two styles are applied 
     //1. the tailwind styling is applied (bg-crew-mobile md:bg-crew-tablet xl:bg-crew-desktop).
     //2. .css styling because vercel does not recognize the tailwind styling.
-    <div className="bga  w-screen bg-cover text-white md:pt-40  bg-no-repeat z-0 h-screen">
+    <div className="bga  w-screen bg-cover text-white xl:pt-5 md:pt-0 md:pr-0  bg-no-repeat z-0 h-screen">
+      <Navbar/>
       <div className="border-b-[1px] md:border-0   xl:text-[28px]     md:text-[20px]  border-b-[#383B4B] gap-10 flex flex-col items-center ">
-        <p className="barlow-condensed-regular xl:tracking-[4.72px] md:absolute md:left-10 pt-3 flex xl:absolute xl:left-40   gap-3 ">
-          <p className="text-[#383B4B]   md:text-gray-400">02</p> MEET YOUR CREW
+        <p className="barlow-condensed-regular xl:tracking-[4.72px] md:top-32 md:tracking-widest md:absolute md:left-10 pt-3 flex xl:absolute xl:left-40 xl:top-48   gap-3 ">
+          <p className="text-[#383B4B]  xl:tracking-widest md:tracking-wider  md:text-gray-400">02</p> MEET YOUR CREW
         </p>
         <img
           src={crew[index].images.webp}
@@ -28,12 +30,12 @@ const Crew = () => {
         />
       </div>
       <div className={`pt-8 md:pl-[255px] pl-[60px] `}>
-        <div className="barlow-condensed-thin xl:absolute xl:left-20 xl:bottom-[0px]  flex  gap-6 md:absolute md:top-[450px]  xl:mt-40  xl:pr-20 xl:text-left  items-center pl-24 ">
+        <div className="barlow-condensed-thin xl:absolute xl:left-20 xl:bottom-[0px]  flex  gap-6 md:absolute md:top-[490px]  xl:mt-40  xl:pr-20 xl:text-left  items-center pl-24 ">
           <p
             className={
               index === 0
-                ? ` border-b-2 bg-white p-1 rounded-full`
-                : " border-b-1 border-white p-1  bg-gray-500 rounded-full"
+                ? ` border-b-2 bg-white p-2 rounded-full`
+                : " border-b-1 border-white p-2  bg-gray-500 rounded-full"
             }
             onClick={() => {
               handleClick(0);
@@ -42,8 +44,8 @@ const Crew = () => {
           <p
             className={
               index === 1
-                ? ` border-b-2 bg-white p-1 rounded-full`
-                : "border-b-1 border-white p-1  bg-gray-500 rounded-full"
+                ? ` border-b-2 bg-white p-2 rounded-full`
+                : "border-b-1 border-white p-2  bg-gray-500 rounded-full"
             }
             onClick={() => {
               handleClick(1);
@@ -52,8 +54,8 @@ const Crew = () => {
           <p
             className={
               index === 2
-                ? ` border-b-2 bg-white p-1 rounded-full`
-                : "border-b-1 border-white p-1  bg-gray-500 rounded-full"
+                ? ` border-b-2 bg-white p-2 rounded-full`
+                : "border-b-1 border-white p-2  bg-gray-500 rounded-full"
             }
             onClick={() => {
               handleClick(2);
@@ -62,8 +64,8 @@ const Crew = () => {
           <p
             className={
               index === 3
-                ? ` border-b-2 bg-white p-1 rounded-full`
-                : "border-b-1 border-white p-1  bg-gray-500 rounded-full"
+                ? ` border-b-2 bg-white p-2 rounded-full`
+                : "border-b-1 border-white p-2  bg-gray-500 rounded-full"
             }
             onClick={() => {
               handleClick(3);
@@ -71,17 +73,18 @@ const Crew = () => {
           ></p>
         </div>
       </div>
-      <div className="flex pt-6 flex-col xl:absolute xl: xl:text-left  text-center md:gap-3 md:mt-4 items-center">
+      <div className="flex pt-6 flex-col xl:absolute xl: xl:text-left xl:top-72  text-center md:gap-3 md:mt-40 xl:mt-10  items-center">
         <h2 className="bellefair-regular xl:text-[32px] xl:w-[400px]  xl:text-left xl:top-[100px]  xl:absolute xl:left-40  text-[18px]  text-center  text-[#383B4B] md:text-gray-400 uppercase">
           {crew[index].role}
         </h2>
-        <h1 className="bellefair-regular xl:w-[800px]   xl:text-[56px] items-center  xl:absolute xl:left-40  xl:top-[170px] text-[24px] md:w-[500px] xl:text-left  md:text-[30px] text-center uppercase text-[#FFFFFF]  leading-6   w-[327px] h-[54px] top-[125px] ">
+        <h1 className="bellefair-regular xl:w-[800px]   xl:text-[56px] items-center   xl:absolute xl:left-40  xl:top-[170px] text-[24px] md:w-[500px] xl:text-left  md:text-[30px] text-center uppercase text-[#FFFFFF]  leading-6   w-[327px] h-[54px] top-[125px] ">
           {crew[index].name}
         </h1>
-        <p className="barlow-condensed-regular xl:text-[18px] md:w-[420px] xl:absolute xl:left-40 xl:pr-20 xl:top-[240px] flex md:mt-[-20px] md:px-[5px] xl:text-left  items-center text-center left-[24px] text-[#D0D6F9] pb-14 leading-6 text-sm font-normal w-[327px] h-[170px]  px-5">
+        <p className="barlow-condensed-regular xl:leading-8 md:text-[16px] xl:text-[18px] xl:pt-12  md:w-[420px] xl:absolute xl:left-[160px] xl:pr-20 xl:top-[240px] flex md:mt-[-20px] md:px-[26px] xl:px-0 xl:text-left  items-center text-center left-[24px] text-[#D0D6F9] pb-14 leading-6 text-sm font-normal w-[327px] h-[170px]  px-5">
           {crew[index].bio}
         </p>
       </div>
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-unused-vars
+import Navbar from '../components/Navbar';
 import './home.css'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     //1. the tailwind styling is applied (bg-home-mobile md:bg-home-tablet xl:bg-home-desktop).
     //2. .css styling because vercel does not recognize the tailwind styling.
     <div className="bg  w-screen md:bg-cover  bg-cover text-white  bg-no-repeat z-0  h-dvh flex flex-col gap-20  ">
+      <Navbar/>
       {/* <img className='w-full z-[-100]  h-dvh' src={bgHomeMbImg} alt="" /> */}
       <div className="px-5 gap-10 flex lg:items-start xl:px-44 xl:mt-[300px] lg:px-80 lg:mt-[600px]  md:mt-40 flex-col items-center mt-16 ">
         <p className="barlow-condensed-regular text-[#D0D6F9] md:text-[25px]">
